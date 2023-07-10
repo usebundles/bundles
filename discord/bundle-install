@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Installing Discord"
+sudo cp discord-bundle.desktop /usr/share/applications/
+sudo cp discord-bundle.png /usr/share/pixmaps/
+sudo cp discord-bundle /usr/bin/bundles/
+sudo chmod +x /usr/bin/bundles/discord-bundle
+cp discord-bundle.desktop ~/.local/share/applications/
+touch ~/.config/bundles/installed/discord
+echo "Completed installation."
