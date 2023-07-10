@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+import webview
+
+webview.create_window('Bundles', 'https://usebundles.github.io')
+webview.start()

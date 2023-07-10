@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Installing template"
+sudo cp template-bundle.desktop /usr/share/applications/
+sudo cp template-bundle.png /usr/share/pixmaps/
+sudo cp template-bundle /usr/bin/bundles/
+sudo chmod +x /usr/bin/bundles/template-bundle
+cp template-bundle.desktop ~/.local/share/applications/
+touch ~/.config/bundles/installed/template
+echo "Completed installation."
